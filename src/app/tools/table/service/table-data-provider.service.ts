@@ -36,6 +36,7 @@ export class TableDataProvider<T> extends PagedArrayCollection<T> {
         this.loading = false;
         this.gettingMore.emit(false);
         this.onDataChange(new CollectionEvent(CollectionEvent.CHANGE, results));
+        
       });
     });
   }
